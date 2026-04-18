@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
+from PIL import Image
 import os
 
 st.set_page_config(
@@ -87,6 +88,26 @@ sub_colors = {
 # ── Header ────────────────────────────────────────────────────────────────────
 st.markdown('<div class="header-title">📊 A/B Test Results</div>', unsafe_allow_html=True)
 st.markdown('<div class="header-sub">Ironcoast vs. Banana Boat — Purchase Likelihood Analysis</div>', unsafe_allow_html=True)
+
+# ── Stimuli (inline, compact) ─────────────────────────────────────────────────
+with st.expander("🖼️ View Experimental Stimuli", expanded=False):
+    c_bb, c_gap, c_ic = st.columns([1, 0.06, 1])
+    with c_bb:
+        st.markdown("""
+        <div style="background:#FFF7F2;border:2px solid #E87830;border-radius:12px;
+                    padding:12px 16px 8px;text-align:center;margin-bottom:8px;">
+            <span style="font-size:1rem;font-weight:700;color:#E87830;">
+                🏖️ Condition B &nbsp;—&nbsp; Banana Boat</span>
+        </div>""", unsafe_allow_html=True)
+        st.image(Image.open("bananaboat.PNG"), use_container_width=True)
+    with c_ic:
+        st.markdown("""
+        <div style="background:#F0F8FB;border:2px solid #0D6E8A;border-radius:12px;
+                    padding:12px 16px 8px;text-align:center;margin-bottom:8px;">
+            <span style="font-size:1rem;font-weight:700;color:#0D6E8A;">
+                🌊 Condition A &nbsp;—&nbsp; Ironcoast</span>
+        </div>""", unsafe_allow_html=True)
+        st.image(Image.open("ironcoast.PNG"), use_container_width=True)
 
 # ── KPI Row ───────────────────────────────────────────────────────────────────
 N = len(df)
