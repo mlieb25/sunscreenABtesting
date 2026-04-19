@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="Survey — Sunscreen A/B Test",
+    page_title="Sunscreen Survey — A/B Test",
     page_icon="📋",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -14,18 +14,8 @@ st.markdown("""
         section[data-testid="stSidebar"] { background: #0a2540; }
         section[data-testid="stSidebar"] * { color: #e8edf3 !important; }
         section[data-testid="stSidebar"] hr { border-color: #1e3a5f; }
-        .header-title {
-            color: #0D6E8A;
-            font-size: 2.4rem;
-            font-weight: 800;
-            margin-bottom: 0.3rem;
-        }
-        .header-sub {
-            color: #E87830;
-            font-size: 1.1rem;
-            font-weight: 500;
-            margin-bottom: 1.5rem;
-        }
+        .header-title { color: #0D6E8A; font-size: 2.4rem; font-weight: 800; margin-bottom: 0.3rem; }
+        .header-sub  { color: #E87830; font-size: 1.1rem; font-weight: 500; margin-bottom: 1.5rem; }
     </style>
 """, unsafe_allow_html=True)
 
