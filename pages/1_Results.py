@@ -6,13 +6,6 @@ import plotly.graph_objects as go
 from PIL import Image
 import os
 
-st.set_page_config(
-    page_title="A/B Test Results — Sunscreen",
-    page_icon="📊",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
 st.markdown("""
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
