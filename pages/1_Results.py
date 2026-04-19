@@ -89,6 +89,29 @@ sub_colors = {
 st.markdown('<div class="header-title">📊 A/B Test Results</div>', unsafe_allow_html=True)
 st.markdown('<div class="header-sub">Ironcoast vs. Banana Boat — Purchase Likelihood Analysis</div>', unsafe_allow_html=True)
 
+st.markdown("""
+<div style="
+    background: linear-gradient(135deg, #EAF4F8 0%, #FEF3EC 100%);
+    border-left: 5px solid #0D6E8A;
+    border-radius: 10px;
+    padding: 1.1rem 1.4rem;
+    margin: 0.8rem 0 1.2rem 0;
+">
+    <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#0D6E8A;margin-bottom:0.5rem;">
+        Hypothesis
+    </div>
+    <div style="font-size:1.05rem;font-weight:600;color:#1E2340;margin-bottom:0.35rem;">
+        <b>H1 (Main Effect):</b> Exposure to the Ironcoast brand ad increases purchase likelihood compared to Banana Boat.
+    </div>
+    <div style="font-size:1.05rem;font-weight:600;color:#1E2340;margin-bottom:0.35rem;">
+        <b>H2 (Gender Moderation):</b> This effect is stronger among male respondents than female respondents.
+    </div>
+    <div style="font-size:1.05rem;font-weight:600;color:#1E2340;">
+        <b>H3 (Age Moderation):</b> The effect is greatest among males aged 21–30, the brand's target demographic.
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
 # ── Stimuli (inline, compact) ─────────────────────────────────────────────────
 with st.expander("🖼️ View Experimental Stimuli", expanded=False):
     c_bb, c_gap, c_ic = st.columns([1, 0.06, 1])
