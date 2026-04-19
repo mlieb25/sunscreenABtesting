@@ -100,14 +100,8 @@ st.markdown("""
     <div style="font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#0D6E8A;margin-bottom:0.5rem;">
         Hypothesis
     </div>
-    <div style="font-size:1.05rem;font-weight:600;color:#1E2340;margin-bottom:0.35rem;">
-        <b>H1 (Main Effect):</b> Exposure to the Ironcoast brand ad increases purchase likelihood compared to Banana Boat.
-    </div>
-    <div style="font-size:1.05rem;font-weight:600;color:#1E2340;margin-bottom:0.35rem;">
-        <b>H2 (Gender Moderation):</b> This effect is stronger among male respondents than female respondents.
-    </div>
     <div style="font-size:1.05rem;font-weight:600;color:#1E2340;">
-        <b>H3 (Age Moderation):</b> The effect is greatest among males aged 21–30, the brand's target demographic.
+        Exposure to the Ironcoast brand ad increases purchase likelihood compared to Banana Boat for men aged 21–30.
     </div>
 </div>
 """, unsafe_allow_html=True)
